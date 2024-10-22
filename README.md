@@ -1,26 +1,45 @@
-Aplicación de Mapas
+Auditoria del informe de Análisis Estático
 
-_Descripción
+File Name: app-debug.apk
+Package Name: com.zimmer.evaluacionmapas_sr
+Scan Date: Oct. 22, 2024, 8:44 p.m.
+App Security Score: 36/100 (HIGH RISK)
+Grade: C
 
-Esta aplicación permite a los usuarios ver su ubicación actual en un mapa y seleccionar un destino al hacer clic en el mapa. Utiliza Google Maps y el servicio de ubicación de Android para ofrecer una experiencia de navegación básica.
+App Name: EvalucionMAPAS-SR
+Android versión Name: 1.0
 
-_Características
+_Compatibilidad
+	*Descripción: la aplicación puede instalarse en versiones anteriores de Android (minSdk=24)
+	*Severidad: Alta
+	*Acción Correctiva: Establecer como objetivo una versión más reciente (API 29 o superior)
 
-- Visualización de la Ubicación Actual: La aplicación muestra la ubicación actual del usuario en un marcador en el mapa.
-- Agregar Marcador de Destino: Los usuarios pueden hacer clic en cualquier parte del mapa para agregar un marcador que representa un destino.
+_Modo Debug Habilitado
+	*Descripción: El modo debug está habilitado, facilitando la ingeniería inversa.
+	*Severidad: Alta
+	*Acción Correctiva: Deshabilitar el modo debug en la configuración de la aplicación.
+ 
+_Respaldo de datos en la aplicación
+	*Descripción: Opción "android:allowBackup=true", permitiendo el respaldo de datos.
+	*Severidad: Advertencia
+	*Acción Correctiva: Cambiar esta opción a "false".
 
-_Requisitos
+_Permisos Peligrosos
+	* Descripción: Usó de permisos de ubicación " ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"
+	*Severidad: Alta
+	*Acción Correctiva: Justificar la necesidad de estos permisos y considerar consentimientos más estrictos.
 
-- Android Studio
-- Dispositivo Android o emulador 
-- Clave de API de Google Maps
+_Receptor de Broadcast Exportado
+	*Descripción: Receptor compartido sin una protección de permiso adecuada.
+	*Severidad: Advertencia
+	*Acción Correctiva: Revisar el nivel de protección del permiso y restringir el acceso si es necesario
 
-_Instalación
+_Recomendaciones Generales
 
-1. Clonar el Repositorio:
-   ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd <NOMBRE_DEL_REPOSITORIO>
+* Revisar la lógica de seguridad: considerar el uso de checks de sistema para prevenir el análisis
+no autorizado.
+* Análisis Dinámico: Realizar pruebas adicionales en un entorno controlado para indicar
+vulnerabilidades en caso de que el análisis estático no las haya detectado.
 
 
-// Esta aplicacion fue trajado en clases por Sergio Rojas //
+// Esta aplicacion fue realizado por Sergio Rojas //
