@@ -40,4 +40,4 @@ _Recomendaciones Generales
 * Análisis Dinámico: Realizar pruebas adicionales en un entorno controlado para indicar vulnerabilidades en caso de que el análisis estático no las haya detectado.
 
 
-// Esta aplicacion fue realizado por Sergio Rojas //
+// Esta aplicacion fue realizada por Sergio Rojas //
