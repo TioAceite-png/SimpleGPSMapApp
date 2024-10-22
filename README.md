@@ -1,13 +1,13 @@
 Auditoria del informe de Análisis Estático
 
-File Name: app-debug.apk
-Package Name: com.zimmer.evaluacionmapas_sr
-Scan Date: Oct. 22, 2024, 8:44 p.m.
-App Security Score: 36/100 (HIGH RISK)
-Grade: C
+_File Name: app-debug.apk
+_Package Name: com.zimmer.evaluacionmapas_sr
+_Scan Date: Oct. 22, 2024, 8:44 p.m.
+_App Security Score: 36/100 (HIGH RISK)
+_Grade: C
 
-App Name: EvalucionMAPAS-SR
-Android versión Name: 1.0
+_App Name: EvalucionMAPAS-SR
+_Android versión Name: 1.0
 
 _Compatibilidad
 *Descripción: la aplicación puede instalarse en versiones anteriores de Android (minSdk=24)
